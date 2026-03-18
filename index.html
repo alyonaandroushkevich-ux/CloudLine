@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLine — облачные решения для бизнеса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка (одинакова для всех страниц) -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active" data-lang="home">Главная</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link" data-lang="services">Услуги</a></li>
+                        <li class="nav__item"><a href="calculator.html" class="nav__link" data-lang="calculator">Калькулятор</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link" data-lang="contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="lang-switch">
+                        <button class="lang-btn lang-btn--ru active">RU</button>
+                        <button class="lang-btn lang-btn--en">EN</button>
+                    </div>
+                    <button class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Кнопка "Наверх" (показывается на всех страницах) -->
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <!-- Контент главной страницы -->
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title" data-lang="hero_title">Облачные решения для вашего бизнеса</h1>
+                    <p class="hero__subtitle" data-lang="hero_subtitle">S3-хранилища, резервное копирование и аварийное восстановление в Беларуси</p>
+                    <div class="hero__buttons">
+                        <a href="calculator.html" class="btn btn--primary" data-lang="hero_btn_calc">Рассчитать стоимость</a>
+                        <a href="services.html" class="btn btn--outline" data-lang="hero_btn_services">Все услуги</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <svg viewBox="0 0 400 300" width="100%">
+                        <rect x="50" y="100" width="80" height="120" fill="#4a5c86" rx="12"/>
+                        <rect x="160" y="70" width="80" height="150" fill="#566ea4" rx="12"/>
+                        <rect x="270" y="40" width="80" height="180" fill="#384563" rx="12"/>
+                        <circle cx="120" cy="200" r="20" fill="#e4e4e4"/>
+                        <circle cx="230" cy="180" r="20" fill="#e4e4e4"/>
+                        <circle cx="340" cy="160" r="20" fill="#e4e4e4"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок с краткими услугами (на главной) -->
+        <section class="services-preview">
+            <div class="container">
+                <h2 class="section-title" data-lang="services_title">Наши услуги</h2>
+                <p class="section-desc" data-lang="services_desc">Современные облачные решения для любого бизнеса</p>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">☁️</div>
+                        <h3 class="service-card__title" data-lang="service_s3">S3-хранилище</h3>
+                        <p class="service-card__desc" data-lang="service_s3_desc">Масштабируемое объектное хранилище</p>
+                        <a href="services.html#s3" class="service-card__link" data-lang="more">Подробнее</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">💾</div>
+                        <h3 class="service-card__title" data-lang="service_baas">BaaS</h3>
+                        <p class="service-card__desc" data-lang="service_baas_desc">Резервное копирование</p>
+                        <a href="services.html#baas" class="service-card__link" data-lang="more">Подробнее</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🔄</div>
+                        <h3 class="service-card__title" data-lang="service_draas">DRaaS</h3>
+                        <p class="service-card__desc" data-lang="service_draas_desc">Аварийное восстановление</p>
+                        <a href="services.html#draas" class="service-card__link" data-lang="more">Подробнее</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">⚙️</div>
+                        <h3 class="service-card__title" data-lang="service_iaas">IaaS</h3>
+                        <p class="service-card__desc" data-lang="service_iaas_desc">Виртуальная инфраструктура</p>
+                        <a href="services.html#iaas" class="service-card__link" data-lang="more">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал (одинаков для всех страниц) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                   <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                    <p data-lang="footer_about">Надёжные облачные решения для бизнеса</p>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_services">Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#s3" data-lang="footer_s3">S3</a></li>
+                        <li><a href="services.html#baas" data-lang="footer_baas">BaaS</a></li>
+                        <li><a href="services.html#draas" data-lang="footer_draas">DRaaS</a></li>
+                        <li><a href="services.html#iaas" data-lang="footer_iaas">IaaS</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_contacts">Контакты</h4>
+                    <ul>
+                        <li>info@cloudline.by</li>
+                        <li>+375 29 123-45-67</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                © 2026 CloudLine
+            </div>
+        </div>
+    </footer>
+
+    <!-- Контейнер для уведомлений -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

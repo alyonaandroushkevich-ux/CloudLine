@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLine — Калькулятор стоимости</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                    <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link" data-lang="home">Главная</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link" data-lang="services">Услуги</a></li>
+                        <li class="nav__item"><a href="calculator.html" class="nav__link active" data-lang="calculator">Калькулятор</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link" data-lang="contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="lang-switch">
+                        <button class="lang-btn lang-btn--ru active">RU</button>
+                        <button class="lang-btn lang-btn--en">EN</button>
+                    </div>
+                    <button class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-lang="calc_page_title">Калькулятор стоимости</h1>
+                <p class="page-desc" data-lang="calc_page_desc">Рассчитайте предварительную стоимость услуг CloudLine</p>
+            </div>
+        </section>
+
+        <section class="calculator-full">
+            <div class="container">
+                <div class="calculator__inner">
+                    <div class="calculator__form">
+                        <div class="form-group">
+                            <label for="serviceType" data-lang="calc_service">Выберите услугу:</label>
+                            <select id="serviceType" class="form-control">
+                                <option value="s3" data-lang="calc_s3">S3-хранилище</option>
+                                <option value="baas" data-lang="calc_baas">BaaS</option>
+                                <option value="draas" data-lang="calc_draas">DRaaS</option>
+                                <option value="iaas" data-lang="calc_iaas">IaaS</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="storage" data-lang="calc_storage">Объём (ГБ):</label>
+                            <input type="number" id="storage" min="10" max="10000" value="100" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="months" data-lang="calc_months">Срок (мес):</label>
+                            <input type="number" id="months" min="1" max="12" value="1" class="form-control">
+                        </div>
+                        <button class="btn btn--primary" id="calcBtn" data-lang="calc_btn">Рассчитать</button>
+                    </div>
+            <div class="calculator__result" id="calcResult">
+    <p><span data-lang="calc_result">Итого:</span> <span id="totalPrice">0.15</span> BYN</p>
+</div>
+                </div>
+
+                <div class="calc-info">
+                    <h3 data-lang="calc_info_title">Как рассчитывается стоимость?</h3>
+                    <p data-lang="calc_info_text">Цены указаны в белорусских рублях и включают НДС. Окончательная стоимость зависит от выбранной услуги, объёма хранилища и срока. Для индивидуальных условий свяжитесь с нами.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                    <p data-lang="footer_about">Надёжные облачные решения для бизнеса</p>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_services">Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#s3" data-lang="footer_s3">S3</a></li>
+                        <li><a href="services.html#baas" data-lang="footer_baas">BaaS</a></li>
+                        <li><a href="services.html#draas" data-lang="footer_draas">DRaaS</a></li>
+                        <li><a href="services.html#iaas" data-lang="footer_iaas">IaaS</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_contacts">Контакты</h4>
+                    <ul>
+                        <li>info@cloudline.by</li>
+                        <li>+375 29 123-45-67</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                © 2026 CloudLine
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification-container" id="notificationContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>

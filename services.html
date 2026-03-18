@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudLine — Услуги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo">
+                  <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link" data-lang="home">Главная</a></li>
+                        <li class="nav__item"><a href="services.html" class="nav__link active" data-lang="services">Услуги</a></li>
+                        <li class="nav__item"><a href="calculator.html" class="nav__link" data-lang="calculator">Калькулятор</a></li>
+                        <li class="nav__item"><a href="contact.html" class="nav__link" data-lang="contact">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <div class="lang-switch">
+                        <button class="lang-btn lang-btn--ru active">RU</button>
+                        <button class="lang-btn lang-btn--en">EN</button>
+                    </div>
+                    <button class="burger" id="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title" data-lang="services_page_title">Наши услуги</h1>
+                <p class="page-desc" data-lang="services_page_desc">Мы предлагаем полный спектр облачных решений для вашего бизнеса</p>
+            </div>
+        </section>
+
+        <section class="services-detail">
+            <div class="container">
+                <!-- S3 -->
+                <div class="service-detail" id="s3">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__icon">☁️</div>
+                        <h2 class="service-detail__title" data-lang="service_s3">S3-хранилище</h2>
+                        <p class="service-detail__desc" data-lang="service_s3_desc_full">Масштабируемое объектное хранилище для любых типов данных. Идеально подходит для хранения контента сайтов, резервных копий, логов и аналитических данных. Полная совместимость с Amazon S3 API.</p>
+                        <ul class="service-detail__features">
+                            <li data-lang="s3_feat1">✗ Безлимитное масштабирование</li>
+                            <li data-lang="s3_feat2">✗ Надёжность 99.99%</li>
+                            <li data-lang="s3_feat3">✗ Интеграция с CDN</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- BaaS -->
+                <div class="service-detail" id="baas">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__icon">💾</div>
+                        <h2 class="service-detail__title" data-lang="service_baas">BaaS (Backup as a Service)</h2>
+                        <p class="service-detail__desc" data-lang="service_baas_desc_full">Автоматическое резервное копирование ваших данных с гибкими настройками расписания и глубины хранения. Защита от вирусов-шифровальщиков.</p>
+                        <ul class="service-detail__features">
+                            <li data-lang="baas_feat1">✗ Резервное копирование 24/7</li>
+                            <li data-lang="baas_feat2">✗ Мгновенное восстановление</li>
+                            <li data-lang="baas_feat3">✗ Хранение в нескольких ЦОД</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- DRaaS -->
+                <div class="service-detail" id="draas">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__icon">🔄</div>
+                        <h2 class="service-detail__title" data-lang="service_draas">DRaaS (Disaster Recovery as a Service)</h2>
+                        <p class="service-detail__desc" data-lang="service_draas_desc_full">Аварийное восстановление критически важных систем. Гарантированное время восстановления (RTO) и точка восстановления (RPO) в соответствии с вашими потребностями.</p>
+                        <ul class="service-detail__features">
+                            <li data-lang="draas_feat1">✗ RTO от 15 минут</li>
+                            <li data-lang="draas_feat2">✗ Регулярное тестирование</li>
+                            <li data-lang="draas_feat3">✗ Автоматическое переключение</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- IaaS -->
+                <div class="service-detail" id="iaas">
+                    <div class="service-detail__inner">
+                        <div class="service-detail__icon">⚙️</div>
+                        <h2 class="service-detail__title" data-lang="service_iaas">IaaS (Infrastructure as a Service)</h2>
+                        <p class="service-detail__desc" data-lang="service_iaas_desc_full">Аренда виртуальных серверов с предустановленным ПО или вашими образами. Гибкая конфигурация CPU, RAM, дисков.</p>
+                        <ul class="service-detail__features">
+                            <li data-lang="iaas_feat1">✗ Выделенные ресурсы</li>
+                            <li data-lang="iaas_feat2">✗ Масштабирование за минуты</li>
+                            <li data-lang="iaas_feat3">✗ Защита DDoS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                    <p data-lang="footer_about">Надёжные облачные решения для бизнеса</p>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_services">Услуги</h4>
+                    <ul>
+                        <li><a href="services.html#s3" data-lang="footer_s3">S3</a></li>
+                        <li><a href="services.html#baas" data-lang="footer_baas">BaaS</a></li>
+                        <li><a href="services.html#draas" data-lang="footer_draas">DRaaS</a></li>
+                        <li><a href="services.html#iaas" data-lang="footer_iaas">IaaS</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4 data-lang="footer_contacts">Контакты</h4>
+                    <ul>
+                        <li>info@cloudline.by</li>
+                        <li>+375 29 123-45-67</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                © 2026 CloudLine
+            </div>
+        </div>
+    </footer>
+
+    <div class="notification-container" id="notificationContainer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
