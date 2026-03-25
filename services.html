@@ -11,21 +11,23 @@
         <div class="container">
             <div class="header__inner">
                 <a href="index.html" class="logo">
-                  <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
+                    <img src="https://allwebs.ru/images/2026/03/12/8fb7d8adaff06e4c17b6abf397ea9c35.png" alt="логотип" width="150" style="border: 3px solid white; border-radius: 10px;">
                 </a>
                 <nav class="nav" id="nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link" data-lang="home">Главная</a></li>
                         <li class="nav__item"><a href="services.html" class="nav__link active" data-lang="services">Услуги</a></li>
                         <li class="nav__item"><a href="calculator.html" class="nav__link" data-lang="calculator">Калькулятор</a></li>
+                        <li class="nav__item"><a href="about.html" class="nav__link" data-lang="about">О компании</a></li>
                         <li class="nav__item"><a href="contact.html" class="nav__link" data-lang="contact">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__actions">
                     <div class="lang-switch">
-                        <button class="lang-btn lang-btn--ru active">RU</button>
-                        <button class="lang-btn lang-btn--en">EN</button>
-                    </div>
+    <button class="lang-btn lang-btn--ru active">RU</button>
+    <button class="lang-btn lang-btn--en">EN</button>
+    <button class="lang-btn lang-btn--be">BE</button>
+</div>
                     <button class="burger" id="burger">
                         <span></span>
                         <span></span>
@@ -48,56 +50,330 @@
 
         <section class="services-detail">
             <div class="container">
-                <!-- S3 -->
+                <!-- S3-хранилище -->
                 <div class="service-detail" id="s3">
                     <div class="service-detail__inner">
                         <div class="service-detail__icon">☁️</div>
                         <h2 class="service-detail__title" data-lang="service_s3">S3-хранилище</h2>
-                        <p class="service-detail__desc" data-lang="service_s3_desc_full">Масштабируемое объектное хранилище для любых типов данных. Идеально подходит для хранения контента сайтов, резервных копий, логов и аналитических данных. Полная совместимость с Amazon S3 API.</p>
+                        <p class="service-detail__desc" data-lang="service_s3_desc_full">Масштабируемое объектное хранилище для любых типов данных. Идеально подходит для хранения контента сайтов, резервных копий, логов и аналитических данных. Полная совместимость с S3 API — стандартом для объектных хранилищ.</p>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="s3_features_title">Преимущества:</h3>
                         <ul class="service-detail__features">
-                            <li data-lang="s3_feat1">✗ Безлимитное масштабирование</li>
-                            <li data-lang="s3_feat2">✗ Надёжность 99.99%</li>
-                            <li data-lang="s3_feat3">✗ Интеграция с CDN</li>
+                            <li data-lang="s3_feat1">✓ Безлимитное масштабирование</li>
+                            <li data-lang="s3_feat2">✓ Надёжность 99.99%</li>
+                            <li data-lang="s3_feat3">✓ Интеграция с CDN</li>
+                            <li data-lang="s3_feat4">✓ Гибкое управление доступом</li>
+                            <li data-lang="s3_feat5">✓ Версионирование файлов</li>
+                            <li data-lang="s3_feat6">✓ Шифрование данных</li>
                         </ul>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="s3_usage_title">Варианты использования:</h3>
+                        <ul class="service-detail__features">
+                            <li data-lang="use_case_hosting">Хостинг статических сайтов</li>
+                            <li data-lang="use_case_media">Хранение медиа-контента</li>
+                            <li data-lang="use_case_backup">Резервное копирование</li>
+                            <li data-lang="use_case_analytics">Аналитические данные</li>
+                        </ul>
+
+                        <h3 class="service-detail__subtitle" data-lang="s3_examples_title">Примеры расчёта:</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_volume">Объём</th>
+                                    <th data-lang="table_header_1month">1 месяц</th>
+                                    <th data-lang="table_header_3months">3 месяца (скидка 5%)</th>
+                                    <th data-lang="table_header_12months">12 месяцев (скидка 15%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="gb_100">100 ГБ</td>
+                                    <td>15 BYN</td>
+                                    <td>42.75 BYN</td>
+                                    <td>153 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="gb_500">500 ГБ</td>
+                                    <td>75 BYN</td>
+                                    <td>213.75 BYN</td>
+                                    <td>765 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="tb_1">1 ТБ (1024 ГБ)</td>
+                                    <td>153.60 BYN</td>
+                                    <td>437.76 BYN</td>
+                                    <td>1566.72 BYN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="service-detail__price">
+                            <span class="price-label" data-lang="price_label">Стоимость:</span>
+                            <span class="price-value">0.15 BYN/<span data-lang="gb">ГБ</span> <span data-lang="per_month">в месяц</span></span>
+                        </div>
+                        
+                        <a href="calculator.html" class="btn btn--price" data-lang="calc_individual">Рассчитать индивидуальную стоимость →</a>
                     </div>
                 </div>
-                <!-- BaaS -->
+
+                <!-- BaaS (Backup as a Service) -->
                 <div class="service-detail" id="baas">
                     <div class="service-detail__inner">
                         <div class="service-detail__icon">💾</div>
                         <h2 class="service-detail__title" data-lang="service_baas">BaaS (Backup as a Service)</h2>
                         <p class="service-detail__desc" data-lang="service_baas_desc_full">Автоматическое резервное копирование ваших данных с гибкими настройками расписания и глубины хранения. Защита от вирусов-шифровальщиков.</p>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="baas_features_title">Ключевые возможности:</h3>
                         <ul class="service-detail__features">
-                            <li data-lang="baas_feat1">✗ Резервное копирование 24/7</li>
-                            <li data-lang="baas_feat2">✗ Мгновенное восстановление</li>
-                            <li data-lang="baas_feat3">✗ Хранение в нескольких ЦОД</li>
+                            <li data-lang="baas_feat1">✓ Резервное копирование 24/7</li>
+                            <li data-lang="baas_feat2">✓ Мгновенное восстановление</li>
+                            <li data-lang="baas_feat3">✓ Хранение в нескольких ЦОД</li>
+                            <li data-lang="baas_feat4">✓ Дедупликация данных</li>
+                            <li data-lang="baas_feat5">✓ Инкрементальные копии</li>
+                            <li data-lang="baas_feat6">✓ Политики хранения до 7 лет</li>
                         </ul>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="baas_support_title">Поддерживаемые системы:</h3>
+                        <ul class="service-detail__features">
+                            <li>Windows Server, Linux</li>
+                            <li>VMware, Hyper-V</li>
+                            <li>Microsoft 365, Exchange</li>
+                            <li>Базы данных: MySQL, PostgreSQL, MSSQL</li>
+                        </ul>
+
+                        <h3 class="service-detail__subtitle" data-lang="baas_examples_title">Примеры расчёта:</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_volume">Объём</th>
+                                    <th data-lang="table_header_1month">1 месяц</th>
+                                    <th data-lang="table_header_3months">3 месяца (скидка 5%)</th>
+                                    <th data-lang="table_header_12months">12 месяцев (скидка 15%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="gb_100">100 ГБ</td>
+                                    <td>25 BYN</td>
+                                    <td>71.25 BYN</td>
+                                    <td>255 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="gb_500">500 ГБ</td>
+                                    <td>125 BYN</td>
+                                    <td>356.25 BYN</td>
+                                    <td>1275 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="tb_1">1 ТБ (1024 ГБ)</td>
+                                    <td>256 BYN</td>
+                                    <td>729.60 BYN</td>
+                                    <td>2611.20 BYN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="service-detail__price">
+                            <span class="price-label" data-lang="price_label">Стоимость:</span>
+                            <span class="price-value">0.25 BYN/<span data-lang="gb">ГБ</span> <span data-lang="per_month">в месяц</span></span>
+                        </div>
+                        
+                        <a href="calculator.html" class="btn btn--price" data-lang="calc_individual">Рассчитать индивидуальную стоимость →</a>
                     </div>
                 </div>
-                <!-- DRaaS -->
+
+                <!-- DRaaS (Disaster Recovery as a Service) -->
                 <div class="service-detail" id="draas">
                     <div class="service-detail__inner">
                         <div class="service-detail__icon">🔄</div>
                         <h2 class="service-detail__title" data-lang="service_draas">DRaaS (Disaster Recovery as a Service)</h2>
                         <p class="service-detail__desc" data-lang="service_draas_desc_full">Аварийное восстановление критически важных систем. Гарантированное время восстановления (RTO) и точка восстановления (RPO) в соответствии с вашими потребностями.</p>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="draas_sla_title">SLA гарантии:</h3>
                         <ul class="service-detail__features">
-                            <li data-lang="draas_feat1">✗ RTO от 15 минут</li>
-                            <li data-lang="draas_feat2">✗ Регулярное тестирование</li>
-                            <li data-lang="draas_feat3">✗ Автоматическое переключение</li>
+                            <li data-lang="draas_feat1">✓ RTO от 15 минут</li>
+                            <li data-lang="draas_feat4">✓ RPO от 5 минут</li>
+                            <li data-lang="draas_feat2">✓ Регулярное тестирование</li>
+                            <li data-lang="draas_feat3">✓ Автоматическое переключение</li>
+                            <li data-lang="draas_feat5">✓ Географическая распределённость</li>
                         </ul>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="draas_tariffs_title">Тарифные планы (цена за ГБ):</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_tariff">Тариф</th>
+                                    <th data-lang="table_header_rto">RTO</th>
+                                    <th data-lang="table_header_rpo">RPO</th>
+                                    <th data-lang="table_header_price_per_gb">Цена за ГБ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="tariff_basic">Базовый</td>
+                                    <td>4 часа</td>
+                                    <td>24 часа</td>
+                                    <td>0.30 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="tariff_business">Бизнес</td>
+                                    <td>1 час</td>
+                                    <td>1 час</td>
+                                    <td>0.40 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="tariff_critical">Критический</td>
+                                    <td>15 мин</td>
+                                    <td>5 мин</td>
+                                    <td>0.60 BYN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h3 class="service-detail__subtitle" data-lang="draas_examples_title">Примеры расчёта (тариф "Бизнес"):</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_volume">Объём</th>
+                                    <th data-lang="table_header_1month">1 месяц</th>
+                                    <th data-lang="table_header_3months">3 месяца (скидка 5%)</th>
+                                    <th data-lang="table_header_12months">12 месяцев (скидка 15%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="gb_100">100 ГБ</td>
+                                    <td>40 BYN</td>
+                                    <td>114 BYN</td>
+                                    <td>408 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="gb_500">500 ГБ</td>
+                                    <td>200 BYN</td>
+                                    <td>570 BYN</td>
+                                    <td>2040 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="tb_1">1 ТБ (1024 ГБ)</td>
+                                    <td>409.60 BYN</td>
+                                    <td>1167.36 BYN</td>
+                                    <td>4177.92 BYN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div class="service-detail__price">
+                            <span class="price-label" data-lang="price_label_base">Базовая стоимость:</span>
+                            <span class="price-value"><span data-lang="from">от</span> 0.30 BYN/<span data-lang="gb">ГБ</span> <span data-lang="per_month">в месяц</span></span>
+                        </div>
+                        
+                        <a href="calculator.html" class="btn btn--price" data-lang="calc_individual">Рассчитать индивидуальную стоимость →</a>
                     </div>
                 </div>
-                <!-- IaaS -->
+
+                <!-- IaaS (Infrastructure as a Service) -->
                 <div class="service-detail" id="iaas">
                     <div class="service-detail__inner">
                         <div class="service-detail__icon">⚙️</div>
                         <h2 class="service-detail__title" data-lang="service_iaas">IaaS (Infrastructure as a Service)</h2>
-                        <p class="service-detail__desc" data-lang="service_iaas_desc_full">Аренда виртуальных серверов с предустановленным ПО или вашими образами. Гибкая конфигурация CPU, RAM, дисков.</p>
+                        <p class="service-detail__desc" data-lang="service_iaas_desc_full">Аренда виртуальных серверов с предустановленным ПО или вашими образами. Гибкая конфигурация CPU, RAM, дисков. Оплата только за потребляемые ресурсы.</p>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="iaas_resources_title">Тарифы на ресурсы:</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_resource">Ресурс</th>
+                                    <th data-lang="table_header_price">Цена</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="resource_vcpu">vCPU (процессор)</td>
+                                    <td data-lang="price_per_core">8 BYN/ядро в месяц</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="resource_ram">RAM (оперативная память)</td>
+                                    <td data-lang="price_per_gb_ram">4 BYN/ГБ в месяц</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="resource_ssd">SSD диск</td>
+                                    <td data-lang="price_per_gb_ssd">0.30 BYN/ГБ в месяц</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="resource_hdd">HDD диск</td>
+                                    <td data-lang="price_per_gb_hdd">0.15 BYN/ГБ в месяц</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="iaas_configs_title">Готовые конфигурации:</h3>
+                        <table class="service-table">
+                            <thead>
+                                <tr>
+                                    <th data-lang="table_header_config">Конфигурация</th>
+                                    <th data-lang="table_header_vcpu">vCPU</th>
+                                    <th data-lang="table_header_ram">RAM</th>
+                                    <th data-lang="table_header_disk">Диск (SSD)</th>
+                                    <th data-lang="table_header_price_per_month">Цена/мес</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-lang="config_micro">Микро</td>
+                                    <td>1</td>
+                                    <td>1 ГБ</td>
+                                    <td>20 ГБ</td>
+                                    <td>18 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="config_basic">Базовый</td>
+                                    <td>2</td>
+                                    <td>4 ГБ</td>
+                                    <td>50 ГБ</td>
+                                    <td>47 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="config_standard">Стандарт</td>
+                                    <td>4</td>
+                                    <td>8 ГБ</td>
+                                    <td>100 ГБ</td>
+                                    <td>94 BYN</td>
+                                </tr>
+                                <tr>
+                                    <td data-lang="config_pro">Про</td>
+                                    <td>8</td>
+                                    <td>16 ГБ</td>
+                                    <td>200 ГБ</td>
+                                    <td>188 BYN</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="iaas_options_title">Дополнительные опции:</h3>
                         <ul class="service-detail__features">
-                            <li data-lang="iaas_feat1">✗ Выделенные ресурсы</li>
-                            <li data-lang="iaas_feat2">✗ Масштабирование за минуты</li>
-                            <li data-lang="iaas_feat3">✗ Защита DDoS</li>
+                            <li data-lang="iaas_feat1">✓ Выделенные ресурсы</li>
+                            <li data-lang="iaas_feat2">✓ Масштабирование за минуты</li>
+                            <li data-lang="iaas_feat3">✓ Защита DDoS</li>
+                            <li data-lang="iaas_feat4">✓ Балансировщик нагрузки</li>
+                            <li data-lang="iaas_feat5">✓ Резервное копирование</li>
+                            <li data-lang="iaas_feat6">✓ Мониторинг 24/7</li>
                         </ul>
+                        
+                        <h3 class="service-detail__subtitle" data-lang="iaas_software_title">Предустановленное ПО:</h3>
+                        <ul class="service-detail__features">
+                            <li data-lang="iaas_software1">Windows Server 2019/2022</li>
+                            <li data-lang="iaas_software2">Ubuntu, CentOS, Debian</li>
+                            <li data-lang="iaas_software3">1С-Битрикс</li>
+                            <li data-lang="iaas_software4">Базы данных (MySQL, PostgreSQL)</li>
+                        </ul>
+                        
+                        <div class="service-detail__price">
+    <span class="price-label" data-lang="price_label">Стоимость:</span>
+    <span class="price-value"><span data-lang="from">от</span> 0.30 BYN/<span data-lang="gb">ГБ</span> + <span data-lang="resources">ресурсы</span></span>
+</div>
+                        </div>
+                        
+                        <a href="calculator.html" class="btn btn--price" data-lang="calc_individual">Рассчитать индивидуальную стоимость →</a>
                     </div>
                 </div>
             </div>
